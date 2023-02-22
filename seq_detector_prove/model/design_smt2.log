@@ -34,22 +34,23 @@ Module seq_detector directly or indirectly contains formal properties -> setting
 
 === seq_detector ===
 
-   Number of wires:                 46
-   Number of wire bits:             66
+   Number of wires:                 66
+   Number of wire bits:             86
    Number of public wires:           7
    Number of public wire bits:      15
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 45
-     $and                            3
+   Number of cells:                 66
+     $and                            8
      $anyinit                        1
-     $assert                         1
+     $assert                         2
      $assume                         1
      $eq                             6
-     $ff                             8
-     $mux                           18
-     $not                            4
+     $ff                            10
+     $mux                           22
+     $not                            6
+     $or                             7
      $pmux                           1
      $reduce_or                      2
 
@@ -60,6 +61,6 @@ Module seq_detector directly or indirectly contains formal properties -> setting
 6.2. Executing DEMUXMAP pass.
 Creating SMT-LIBv2 representation of module seq_detector.
 
-End of script. Logfile hash: e0b446a6ad, CPU: user 0.01s system 0.00s, MEM: 21.35 MB peak
+End of script. Logfile hash: afd4d762e2, CPU: user 0.01s system 0.00s, MEM: 21.34 MB peak
 Yosys 0.26 (git sha1 7e588664e, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 64% 2x write_smt2 (0 sec), 20% 2x read_ilang (0 sec), ...
+Time spent: 56% 2x write_smt2 (0 sec), 30% 2x read_ilang (0 sec), ...

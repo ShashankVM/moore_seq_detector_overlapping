@@ -43,6 +43,7 @@ property CHK_SEQ_DETECT;
 endproperty;
 
 ASSERT_CHK_SEQ_DETECT: assert property (CHK_SEQ_DETECT);
+ASSERT_ONE_HOT_STATE_ENCODING: assert property ($onehot(state));
 SEQ_DETECT_WITNESS: cover property (SEQ ##2 detect_out);
 
 endmodule

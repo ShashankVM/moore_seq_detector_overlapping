@@ -82,14 +82,14 @@ Cleaned up 0 empty switches.
 
 3.2.12. Executing OPT_EXPR pass (perform const folding).
 Optimizing module seq_detector.
-<suppressed ~33 debug messages>
+<suppressed ~35 debug messages>
 
 3.3. Executing OPT_EXPR pass (perform const folding).
 Optimizing module seq_detector.
 
 3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \seq_detector..
-Removed 0 unused cells and 73 unused wires.
+Removed 0 unused cells and 77 unused wires.
 <suppressed ~5 debug messages>
 
 3.5. Executing CHECK pass (checking for obvious problems).
@@ -117,7 +117,7 @@ Removed 0 multiplexer ports.
 
 3.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \seq_detector.
-    New ctrl vector for $pmux cell $verific$select_19$seq_detector.sv:24$44: { $verific$n51$3 $verific$n53$5 $verific$n54$6 $auto$opt_reduce.cc:134:opt_pmux$201 $verific$n56$8 }
+    New ctrl vector for $pmux cell $verific$select_19$seq_detector.sv:24$59: { $verific$n51$3 $verific$n53$5 $verific$n54$6 $auto$opt_reduce.cc:134:opt_pmux$242 $verific$n56$8 }
   Optimizing cells in module \seq_detector.
 Performed a total of 1 changes.
 
@@ -160,11 +160,11 @@ Optimizing module seq_detector.
 3.6.14. Finished OPT passes. (There is nothing left to do.)
 
 3.7. Executing WREDUCE pass (reducing word size of cells).
-Removed top 4 bits (of 5) from port B of cell seq_detector.$verific$equal_13$seq_detector.sv:19$36 ($eq).
-Removed top 3 bits (of 5) from port B of cell seq_detector.$verific$equal_14$seq_detector.sv:20$37 ($eq).
-Removed top 2 bits (of 5) from port B of cell seq_detector.$verific$equal_15$seq_detector.sv:21$38 ($eq).
-Removed top 1 bits (of 5) from port B of cell seq_detector.$verific$equal_16$seq_detector.sv:22$39 ($eq).
-Removed top 2 bits (of 5) from wire seq_detector.$verific$n41$28.
+Removed top 4 bits (of 5) from port B of cell seq_detector.$verific$equal_13$seq_detector.sv:19$51 ($eq).
+Removed top 3 bits (of 5) from port B of cell seq_detector.$verific$equal_14$seq_detector.sv:20$52 ($eq).
+Removed top 2 bits (of 5) from port B of cell seq_detector.$verific$equal_15$seq_detector.sv:21$53 ($eq).
+Removed top 1 bits (of 5) from port B of cell seq_detector.$verific$equal_16$seq_detector.sv:22$54 ($eq).
+Removed top 2 bits (of 5) from wire seq_detector.$verific$n41$43.
 
 3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \seq_detector..
@@ -191,21 +191,22 @@ Finding unused cells or wires in module \seq_detector..
 
 === seq_detector ===
 
-   Number of wires:                 30
-   Number of wire bits:             42
+   Number of wires:                 46
+   Number of wire bits:             58
    Number of public wires:           6
    Number of public wire bits:      14
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 29
-     $adff                           9
+   Number of cells:                 46
+     $adff                          11
      $aldff                          2
-     $and                            4
-     $assert                         1
+     $and                            9
+     $assert                         2
      $cover                          1
      $eq                             6
-     $not                            3
+     $not                            5
+     $or                             7
      $pmux                           1
      $reduce_or                      2
 
@@ -229,6 +230,6 @@ Module seq_detector directly or indirectly contains formal properties -> setting
 Output filename: ../model/design.il
 
 Warnings: 3 unique messages, 3 total
-End of script. Logfile hash: f48fd501e1, CPU: user 0.06s system 0.02s, MEM: 29.78 MB peak
+End of script. Logfile hash: 5a1d8aa60e, CPU: user 0.02s system 0.00s, MEM: 29.52 MB peak
 Yosys 0.26 (git sha1 7e588664e, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 23% 3x hierarchy (0 sec), 21% 6x opt_expr (0 sec), ...
+Time spent: 22% 6x opt_expr (0 sec), 19% 5x opt_clean (0 sec), ...

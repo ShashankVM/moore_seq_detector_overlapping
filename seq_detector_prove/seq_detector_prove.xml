@@ -1,127 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2023-02-22T15:15:22" hostname="shashank-Latitude-3520" package="seq_detector" id="0" name="prove" tests="2" errors="0" failures="2" time="0" skipped="1">
+<testsuite timestamp="2023-02-22T18:34:14" hostname="shashank-Latitude-3520" package="seq_detector" id="0" name="prove" tests="3" errors="0" failures="0" time="0" skipped="1">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
-<property name="status" value="UNKNOWN"/>
+<property name="status" value="PASS"/>
 </properties>
 <testcase classname="prove" name="build execution" time="0">
-<failure type="UNKNOWN" message="Task returned status UNKNOWN." />
 </testcase>
-<testcase classname="prove" name="Property COVER in seq_detector at seq_detector.sv:46" time="0" type="COVER" location="seq_detector.sv:46" id="SEQ_DETECT_WITNESS">
+<testcase classname="prove" name="Property COVER in seq_detector at seq_detector.sv:47" time="0" type="COVER" location="seq_detector.sv:47" id="SEQ_DETECT_WITNESS">
 <skipped />
 </testcase>
-<testcase classname="prove" name="Property ASSERT in seq_detector at seq_detector.sv:45" time="0" type="ASSERT" location="seq_detector.sv:45" id="ASSERT_CHK_SEQ_DETECT" tracefile="engine_0/trace_induct.vcd">
-<failure type="ASSERT" message="Property ASSERT in seq_detector at seq_detector.sv:45 failed. Trace file: engine_0/trace_induct.vcd" />
+<testcase classname="prove" name="Property ASSERT in seq_detector at seq_detector.sv:45" time="0" type="ASSERT" location="seq_detector.sv:45" id="ASSERT_CHK_SEQ_DETECT">
 </testcase>
-<system-out>SBY 15:15:21 [seq_detector_prove] Copy '/home/shashank/moore_seq_detector/seq_detector.sv' to '/home/shashank/moore_seq_detector/seq_detector_prove/src/seq_detector.sv'.
-SBY 15:15:21 [seq_detector_prove] engine_0: smtbmc boolector
-SBY 15:15:21 [seq_detector_prove] base: starting process &quot;cd seq_detector_prove/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 15:15:21 [seq_detector_prove] base: This is an EVALUATION LICENSE of Tabby CAD Suite.
-SBY 15:15:21 [seq_detector_prove] base: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
-SBY 15:15:21 [seq_detector_prove] base: This license was issued to Shashank V M.
-SBY 15:15:21 [seq_detector_prove] base: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
-SBY 15:15:21 [seq_detector_prove] base: VERIFIC-WARNING [VERI-1924] seq_detector.sv:7: variable 'state' is driven by invalid combination of procedural drivers
-SBY 15:15:21 [seq_detector_prove] base: VERIFIC-WARNING [VERI-1971] seq_detector.sv:13: 'state' driven by this always_ff block should not be driven by any other process
-SBY 15:15:22 [seq_detector_prove] base: VERIFIC-WARNING [VERI-1995] seq_detector.sv:24: unique/priority if/case is not full
-SBY 15:15:22 [seq_detector_prove] base: finished (returncode=0)
-SBY 15:15:22 [seq_detector_prove] prep: starting process &quot;cd seq_detector_prove/model; yosys -ql design_prep.log design_prep.ys&quot;
-SBY 15:15:22 [seq_detector_prove] prep: This is an EVALUATION LICENSE of Tabby CAD Suite.
-SBY 15:15:22 [seq_detector_prove] prep: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
-SBY 15:15:22 [seq_detector_prove] prep: This license was issued to Shashank V M.
-SBY 15:15:22 [seq_detector_prove] prep: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
-SBY 15:15:22 [seq_detector_prove] prep: finished (returncode=0)
-SBY 15:15:22 [seq_detector_prove] smt2: starting process &quot;cd seq_detector_prove/model; yosys -ql design_smt2.log design_smt2.ys&quot;
-SBY 15:15:22 [seq_detector_prove] smt2: This is an EVALUATION LICENSE of Tabby CAD Suite.
-SBY 15:15:22 [seq_detector_prove] smt2: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
-SBY 15:15:22 [seq_detector_prove] smt2: This license was issued to Shashank V M.
-SBY 15:15:22 [seq_detector_prove] smt2: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
-SBY 15:15:22 [seq_detector_prove] smt2: finished (returncode=0)
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: starting process &quot;cd seq_detector_prove; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: starting process &quot;cd seq_detector_prove; yosys-smtbmc -s boolector --presat --unroll -i --noprogress -t 20  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2&quot;
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Solver: boolector
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Solver: boolector
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 20..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 19..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 18..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 17..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 16..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 15..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 14..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 13..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 12..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 11..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 10..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 10..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 11..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 10..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 11..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 12..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 9..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 12..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 13..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 8..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 13..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 14..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 7..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 14..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 15..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 6..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 15..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 16..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 5..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 16..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 17..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 4..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 17..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 18..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 18..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 3..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 19..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 19..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 2..
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Status: passed
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: finished (returncode=0)
-SBY 15:15:22 [seq_detector_prove] engine_0.basecase: Status returned by engine for basecase: pass
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 1..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 0..
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Temporal induction failed!
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Assert failed in seq_detector: ASSERT_CHK_SEQ_DETECT
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Writing trace to VCD file: engine_0/trace_induct.vcd
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_induct_tb.v
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Writing trace to constraints file: engine_0/trace_induct.smtc
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace_induct.yw
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: ##   0:00:00  Status: failed
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: finished (returncode=1)
-SBY 15:15:22 [seq_detector_prove] engine_0.induction: Status returned by engine for induction: FAIL
-SBY 15:15:22 [seq_detector_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
-SBY 15:15:22 [seq_detector_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 15:15:22 [seq_detector_prove] summary: engine_0 (smtbmc boolector) returned pass for basecase
-SBY 15:15:22 [seq_detector_prove] summary: engine_0 (smtbmc boolector) returned FAIL for induction
-SBY 15:15:22 [seq_detector_prove] summary: counterexample trace [induction]: seq_detector_prove/engine_0/trace_induct.vcd
-SBY 15:15:22 [seq_detector_prove] summary:   failed assertion seq_detector.ASSERT_CHK_SEQ_DETECT at seq_detector.sv:45 in step 0
-SBY 15:15:22 [seq_detector_prove] DONE (UNKNOWN, rc=4)
+<testcase classname="prove" name="Property ASSERT in seq_detector at seq_detector.sv:46" time="0" type="ASSERT" location="seq_detector.sv:46" id="ASSERT_ONE_HOT_STATE_ENCODING">
+</testcase>
+<system-out>SBY 18:34:14 [seq_detector_prove] Removing directory '/home/shashank/moore_seq_detector_overlapping/seq_detector_prove'.
+SBY 18:34:14 [seq_detector_prove] Copy '/home/shashank/moore_seq_detector_overlapping/seq_detector.sv' to '/home/shashank/moore_seq_detector_overlapping/seq_detector_prove/src/seq_detector.sv'.
+SBY 18:34:14 [seq_detector_prove] engine_0: smtbmc boolector
+SBY 18:34:14 [seq_detector_prove] base: starting process &quot;cd seq_detector_prove/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:34:14 [seq_detector_prove] base: This is an EVALUATION LICENSE of Tabby CAD Suite.
+SBY 18:34:14 [seq_detector_prove] base: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
+SBY 18:34:14 [seq_detector_prove] base: This license was issued to Shashank V M.
+SBY 18:34:14 [seq_detector_prove] base: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
+SBY 18:34:14 [seq_detector_prove] base: VERIFIC-WARNING [VERI-1924] seq_detector.sv:7: variable 'state' is driven by invalid combination of procedural drivers
+SBY 18:34:14 [seq_detector_prove] base: VERIFIC-WARNING [VERI-1971] seq_detector.sv:13: 'state' driven by this always_ff block should not be driven by any other process
+SBY 18:34:14 [seq_detector_prove] base: VERIFIC-WARNING [VERI-1995] seq_detector.sv:24: unique/priority if/case is not full
+SBY 18:34:14 [seq_detector_prove] base: finished (returncode=0)
+SBY 18:34:14 [seq_detector_prove] prep: starting process &quot;cd seq_detector_prove/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:34:14 [seq_detector_prove] prep: This is an EVALUATION LICENSE of Tabby CAD Suite.
+SBY 18:34:14 [seq_detector_prove] prep: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
+SBY 18:34:14 [seq_detector_prove] prep: This license was issued to Shashank V M.
+SBY 18:34:14 [seq_detector_prove] prep: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
+SBY 18:34:14 [seq_detector_prove] prep: finished (returncode=0)
+SBY 18:34:14 [seq_detector_prove] smt2: starting process &quot;cd seq_detector_prove/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 18:34:14 [seq_detector_prove] smt2: This is an EVALUATION LICENSE of Tabby CAD Suite.
+SBY 18:34:14 [seq_detector_prove] smt2: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
+SBY 18:34:14 [seq_detector_prove] smt2: This license was issued to Shashank V M.
+SBY 18:34:14 [seq_detector_prove] smt2: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
+SBY 18:34:14 [seq_detector_prove] smt2: finished (returncode=0)
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: starting process &quot;cd seq_detector_prove; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: starting process &quot;cd seq_detector_prove; yosys-smtbmc -s boolector --presat --unroll -i --noprogress -t 20  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2&quot;
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Solver: boolector
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Solver: boolector
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 20..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 19..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 18..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 17..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 16..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 15..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Trying induction in step 14..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Temporal induction successful.
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: ##   0:00:00  Status: passed
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: finished (returncode=0)
+SBY 18:34:14 [seq_detector_prove] engine_0.induction: Status returned by engine for induction: pass
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 10..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 10..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 11..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 11..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 12..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 12..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 13..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 13..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 14..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 14..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 15..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 15..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 16..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 16..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 17..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 17..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 18..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 18..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 19..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 19..
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: ##   0:00:00  Status: passed
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: finished (returncode=0)
+SBY 18:34:14 [seq_detector_prove] engine_0.basecase: Status returned by engine for basecase: pass
+SBY 18:34:14 [seq_detector_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:34:14 [seq_detector_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:34:14 [seq_detector_prove] summary: engine_0 (smtbmc boolector) returned pass for basecase
+SBY 18:34:14 [seq_detector_prove] summary: engine_0 (smtbmc boolector) returned pass for induction
+SBY 18:34:14 [seq_detector_prove] summary: engine_0 did not produce any traces
+SBY 18:34:14 [seq_detector_prove] summary: successful proof by k-induction.
+SBY 18:34:14 [seq_detector_prove] DONE (PASS, rc=0)
 </system-out>
 <system-err>
 </system-err>
