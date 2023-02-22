@@ -1,0 +1,65 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite -- YosysHQ Edition [202302081344]     |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2023 YosysHQ GmbH                                    |
+ |                                                                            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26 (git sha1 7e588664e, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \seq_detector
+
+2.2. Analyzing design hierarchy..
+Top module:  \seq_detector
+Removed 0 unused modules.
+Module seq_detector directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== seq_detector ===
+
+   Number of wires:                 46
+   Number of wire bits:             66
+   Number of public wires:           7
+   Number of public wire bits:      15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 45
+     $and                            3
+     $anyinit                        1
+     $assert                         1
+     $assume                         1
+     $eq                             6
+     $ff                             8
+     $mux                           18
+     $not                            4
+     $pmux                           1
+     $reduce_or                      2
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module seq_detector.
+
+End of script. Logfile hash: e0b446a6ad, CPU: user 0.01s system 0.00s, MEM: 21.66 MB peak
+Yosys 0.26 (git sha1 7e588664e, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 56% 2x write_smt2 (0 sec), 26% 2x read_ilang (0 sec), ...

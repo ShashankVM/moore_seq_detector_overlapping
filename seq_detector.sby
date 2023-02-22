@@ -1,0 +1,26 @@
+[tasks]
+witness
+bmc
+prove
+
+[options]
+witness:
+mode cover
+--
+bmc:
+mode bmc
+--
+prove:
+mode prove
+--
+
+[engines]
+smtbmc boolector
+
+[script]
+read -sv seq_detector.sv
+hierarchy -check -top seq_detector
+prep -top seq_detector
+
+[files]
+seq_detector.sv

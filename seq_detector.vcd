@@ -1,0 +1,71 @@
+$date
+	Wed Feb 22 11:41:22 2023
+$end
+$version
+	GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+$end
+$timescale
+	1ns
+$end
+$scope module seq_detector $end
+$var wire 5 ' state[4:0] $end
+$var wire 5 $ next[4:0] $end
+$var wire 1 & seq_in $end
+$var wire 1 % reset $end
+$var wire 1 # detect_out $end
+$var wire 1 " clk $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1"
+0%
+b1 '
+b10 $
+1&
+0#
+$end
+#5
+0"
+#10
+1"
+b10 '
+0&
+b100 $
+#15
+0"
+#20
+1"
+b1000 $
+1&
+b100 '
+#25
+0"
+#30
+1"
+b1000 '
+b10000 $
+#35
+0"
+#40
+1"
+b100 $
+b10000 '
+0&
+#45
+0"
+#50
+1"
+1#
+b100 '
+b1 $
+#55
+0"
+#60
+1"
+b1 '
+0#
+#65
+0"
+#70
+1"

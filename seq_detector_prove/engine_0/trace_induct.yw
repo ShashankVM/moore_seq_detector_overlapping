@@ -1,0 +1,44 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\clk"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\reset"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\seq_in"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["$auto$async2sync.cc:139:execute$204"], "width": 5, "offset": 0, "init_only": true},
+    {"path": ["$auto$async2sync.cc:171:execute$211"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["$auto$async2sync.cc:171:execute$213"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["$auto$async2sync.cc:171:execute$215"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["$auto$async2sync.cc:171:execute$217"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["$auto$async2sync.cc:171:execute$219"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["$auto$async2sync.cc:171:execute$223"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["$auto$async2sync.cc:171:execute$227"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_verific_detect_out_reg_seq_detector_sv_30_47"], "width": 1, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "0000000000000000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "100"},
+    {"bits": "000"},
+    {"bits": "100"},
+    {"bits": "100"},
+    {"bits": "000"},
+    {"bits": "000"},
+    {"bits": "000"}
+  ]
+}

@@ -1,0 +1,13 @@
+[options]
+mode prove
+
+[engines]
+smtbmc boolector
+
+[script]
+read -sv seq_detector.sv
+hierarchy -check -top seq_detector
+prep -top seq_detector
+
+[files]
+seq_detector.sv
