@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
 Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+=======
+Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+>>>>>>> b7a319f (Adding seq_detector_prove/PASS to traced files)
 engine_0 (smtbmc boolector) returned pass for basecase
 engine_0 (smtbmc boolector) returned pass for induction
 engine_0 did not produce any traces
