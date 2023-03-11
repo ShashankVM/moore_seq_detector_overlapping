@@ -1,5 +1,5 @@
-Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
-Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
 engine_0 (smtbmc boolector) returned pass
 cover trace: engine_0/trace0.vcd
-  reached cover statement seq_detector.SEQ_DETECT_WITNESS at seq_detector.sv:46 in step 6
+  reached cover statement seq_detector.SEQ_DETECT_WITNESS at seq_detector.sv:52 in step 7

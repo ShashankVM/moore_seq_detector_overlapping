@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2023-02-22T11:28:35" hostname="shashank-Latitude-3520" package="seq_detector" id="0" name="bmc" tests="2" errors="0" failures="0" time="0" skipped="1">
+<testsuite timestamp="2023-03-10T22:06:45" hostname="shashank-Latitude-3520" package="seq_detector" id="0" name="bmc" tests="3" errors="0" failures="0" time="1" skipped="1">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
@@ -8,85 +8,86 @@
 </properties>
 <testcase classname="bmc" name="build execution" time="0">
 </testcase>
-<testcase classname="bmc" name="Property COVER in seq_detector at seq_detector.sv:46" time="0" type="COVER" location="seq_detector.sv:46" id="SEQ_DETECT_WITNESS">
+<testcase classname="bmc" name="Property COVER in seq_detector at seq_detector.sv:52" time="0" type="COVER" location="seq_detector.sv:52" id="SEQ_DETECT_WITNESS">
 <skipped />
 </testcase>
-<testcase classname="bmc" name="Property ASSERT in seq_detector at seq_detector.sv:45" time="0" type="ASSERT" location="seq_detector.sv:45" id="ASSERT_CHK_SEQ_DETECT">
+<testcase classname="bmc" name="Property ASSERT in seq_detector at seq_detector.sv:50" time="0" type="ASSERT" location="seq_detector.sv:50" id="ASSERT_CHK_SEQ_DETECT">
 </testcase>
-<system-out>SBY 11:28:35 [seq_detector_bmc] Removing directory '/home/shashank/moore_seq_detector/seq_detector_bmc'.
-SBY 11:28:35 [seq_detector_bmc] Copy '/home/shashank/moore_seq_detector/seq_detector.sv' to '/home/shashank/moore_seq_detector/seq_detector_bmc/src/seq_detector.sv'.
-SBY 11:28:35 [seq_detector_bmc] engine_0: smtbmc boolector
-SBY 11:28:35 [seq_detector_bmc] base: starting process &quot;cd seq_detector_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 11:28:35 [seq_detector_bmc] base: This is an EVALUATION LICENSE of Tabby CAD Suite.
-SBY 11:28:35 [seq_detector_bmc] base: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
-SBY 11:28:35 [seq_detector_bmc] base: This license was issued to Shashank V M.
-SBY 11:28:35 [seq_detector_bmc] base: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
-SBY 11:28:35 [seq_detector_bmc] base: VERIFIC-WARNING [VERI-1924] seq_detector.sv:7: variable 'state' is driven by invalid combination of procedural drivers
-SBY 11:28:35 [seq_detector_bmc] base: VERIFIC-WARNING [VERI-1971] seq_detector.sv:13: 'state' driven by this always_ff block should not be driven by any other process
-SBY 11:28:35 [seq_detector_bmc] base: VERIFIC-WARNING [VERI-1995] seq_detector.sv:24: unique/priority if/case is not full
-SBY 11:28:35 [seq_detector_bmc] base: finished (returncode=0)
-SBY 11:28:35 [seq_detector_bmc] prep: starting process &quot;cd seq_detector_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
-SBY 11:28:35 [seq_detector_bmc] prep: This is an EVALUATION LICENSE of Tabby CAD Suite.
-SBY 11:28:35 [seq_detector_bmc] prep: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
-SBY 11:28:35 [seq_detector_bmc] prep: This license was issued to Shashank V M.
-SBY 11:28:35 [seq_detector_bmc] prep: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
-SBY 11:28:35 [seq_detector_bmc] prep: finished (returncode=0)
-SBY 11:28:35 [seq_detector_bmc] smt2: starting process &quot;cd seq_detector_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
-SBY 11:28:35 [seq_detector_bmc] smt2: This is an EVALUATION LICENSE of Tabby CAD Suite.
-SBY 11:28:35 [seq_detector_bmc] smt2: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
-SBY 11:28:35 [seq_detector_bmc] smt2: This license was issued to Shashank V M.
-SBY 11:28:35 [seq_detector_bmc] smt2: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
-SBY 11:28:35 [seq_detector_bmc] smt2: finished (returncode=0)
-SBY 11:28:35 [seq_detector_bmc] engine_0: starting process &quot;cd seq_detector_bmc; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Solver: boolector
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 11..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 11..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 12..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 12..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 13..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 13..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 14..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 14..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 15..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 15..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 16..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 16..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 17..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 17..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 18..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 18..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 19..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 19..
-SBY 11:28:35 [seq_detector_bmc] engine_0: ##   0:00:00  Status: passed
-SBY 11:28:35 [seq_detector_bmc] engine_0: finished (returncode=0)
-SBY 11:28:35 [seq_detector_bmc] engine_0: Status returned by engine: pass
-SBY 11:28:35 [seq_detector_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 11:28:35 [seq_detector_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 11:28:35 [seq_detector_bmc] summary: engine_0 (smtbmc boolector) returned pass
-SBY 11:28:35 [seq_detector_bmc] summary: engine_0 did not produce any traces
-SBY 11:28:35 [seq_detector_bmc] DONE (PASS, rc=0)
+<testcase classname="bmc" name="Property ASSERT in seq_detector at seq_detector.sv:51" time="0" type="ASSERT" location="seq_detector.sv:51" id="ASSERT_ONE_HOT_STATE_ENCODING">
+</testcase>
+<system-out>SBY 22:06:43 [seq_detector_witness] Removing directory '/home/shashank/moore_seq_detector_overlapping/seq_detector_witness'.
+SBY 22:06:43 [seq_detector_bmc] Removing directory '/home/shashank/moore_seq_detector_overlapping/seq_detector_bmc'.
+SBY 22:06:43 [seq_detector_bmc] Copy '/home/shashank/moore_seq_detector_overlapping/seq_detector.sv' to '/home/shashank/moore_seq_detector_overlapping/seq_detector_bmc/src/seq_detector.sv'.
+SBY 22:06:43 [seq_detector_bmc] engine_0: smtbmc boolector
+SBY 22:06:43 [seq_detector_bmc] base: starting process &quot;cd seq_detector_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 22:06:44 [seq_detector_bmc] base: This is an EVALUATION LICENSE of Tabby CAD Suite.
+SBY 22:06:44 [seq_detector_bmc] base: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
+SBY 22:06:44 [seq_detector_bmc] base: This license was issued to Shashank V M.
+SBY 22:06:44 [seq_detector_bmc] base: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
+SBY 22:06:44 [seq_detector_bmc] base: VERIFIC-WARNING [VERI-1995] seq_detector.sv:24: unique/priority if/case is not full
+SBY 22:06:44 [seq_detector_bmc] base: finished (returncode=0)
+SBY 22:06:44 [seq_detector_bmc] prep: starting process &quot;cd seq_detector_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 22:06:44 [seq_detector_bmc] prep: This is an EVALUATION LICENSE of Tabby CAD Suite.
+SBY 22:06:44 [seq_detector_bmc] prep: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
+SBY 22:06:44 [seq_detector_bmc] prep: This license was issued to Shashank V M.
+SBY 22:06:44 [seq_detector_bmc] prep: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
+SBY 22:06:44 [seq_detector_bmc] prep: finished (returncode=0)
+SBY 22:06:44 [seq_detector_bmc] smt2: starting process &quot;cd seq_detector_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 22:06:44 [seq_detector_bmc] smt2: This is an EVALUATION LICENSE of Tabby CAD Suite.
+SBY 22:06:44 [seq_detector_bmc] smt2: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
+SBY 22:06:44 [seq_detector_bmc] smt2: This license was issued to Shashank V M.
+SBY 22:06:44 [seq_detector_bmc] smt2: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
+SBY 22:06:44 [seq_detector_bmc] smt2: finished (returncode=0)
+SBY 22:06:44 [seq_detector_bmc] engine_0: starting process &quot;cd seq_detector_bmc; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 22:06:44 [seq_detector_bmc] engine_0: ##   0:00:00  Solver: boolector
+SBY 22:06:44 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 11..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 12..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 12..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 13..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 13..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 14..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 14..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 15..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 15..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 16..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 16..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 17..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 17..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 18..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 18..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assumptions in step 19..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Checking assertions in step 19..
+SBY 22:06:45 [seq_detector_bmc] engine_0: ##   0:00:00  Status: passed
+SBY 22:06:45 [seq_detector_bmc] engine_0: finished (returncode=0)
+SBY 22:06:45 [seq_detector_bmc] engine_0: Status returned by engine: pass
+SBY 22:06:45 [seq_detector_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 22:06:45 [seq_detector_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 22:06:45 [seq_detector_bmc] summary: engine_0 (smtbmc boolector) returned pass
+SBY 22:06:45 [seq_detector_bmc] summary: engine_0 did not produce any traces
+SBY 22:06:45 [seq_detector_bmc] DONE (PASS, rc=0)
 </system-out>
 <system-err>
 </system-err>

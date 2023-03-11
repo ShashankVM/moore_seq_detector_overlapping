@@ -21,9 +21,6 @@ VERIFIC-COMMENT [VERI-1482] Analyzing Verilog file 'seq_detector.sv'
 Statically elaborating the Verific parse tree.
 Elaborating all modules in library 'work'
 VERIFIC-INFO [VERI-1018] seq_detector.sv:1: compiling module 'seq_detector'
-VERIFIC-WARNING [VERI-1924] seq_detector.sv:7: variable 'state' is driven by invalid combination of procedural drivers
-VERIFIC-WARNING [VERI-1971] seq_detector.sv:13: 'state' driven by this always_ff block should not be driven by any other process
-VERIFIC-INFO [VERI-1972] seq_detector.sv:9: found another procedural driver of 'state' here
 Running rewriter 'initial-assertions'.
 Clearing rewriter list.
 VERIFIC-INFO [VERI-1018] seq_detector.sv:1: compiling module 'seq_detector'
@@ -82,14 +79,14 @@ Cleaned up 0 empty switches.
 
 3.2.12. Executing OPT_EXPR pass (perform const folding).
 Optimizing module seq_detector.
-<suppressed ~35 debug messages>
+<suppressed ~37 debug messages>
 
 3.3. Executing OPT_EXPR pass (perform const folding).
 Optimizing module seq_detector.
 
 3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \seq_detector..
-Removed 0 unused cells and 77 unused wires.
+Removed 0 unused cells and 82 unused wires.
 <suppressed ~5 debug messages>
 
 3.5. Executing CHECK pass (checking for obvious problems).
@@ -117,7 +114,7 @@ Removed 0 multiplexer ports.
 
 3.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \seq_detector.
-    New ctrl vector for $pmux cell $verific$select_19$seq_detector.sv:24$59: { $verific$n51$3 $verific$n53$5 $verific$n54$6 $auto$opt_reduce.cc:134:opt_pmux$242 $verific$n56$8 }
+    New ctrl vector for $pmux cell $verific$select_19$seq_detector.sv:24$64: { $verific$n51$3 $verific$n53$5 $verific$n54$6 $auto$opt_reduce.cc:134:opt_pmux$266 $verific$n56$8 }
   Optimizing cells in module \seq_detector.
 Performed a total of 1 changes.
 
@@ -160,11 +157,11 @@ Optimizing module seq_detector.
 3.6.14. Finished OPT passes. (There is nothing left to do.)
 
 3.7. Executing WREDUCE pass (reducing word size of cells).
-Removed top 4 bits (of 5) from port B of cell seq_detector.$verific$equal_13$seq_detector.sv:19$51 ($eq).
-Removed top 3 bits (of 5) from port B of cell seq_detector.$verific$equal_14$seq_detector.sv:20$52 ($eq).
-Removed top 2 bits (of 5) from port B of cell seq_detector.$verific$equal_15$seq_detector.sv:21$53 ($eq).
-Removed top 1 bits (of 5) from port B of cell seq_detector.$verific$equal_16$seq_detector.sv:22$54 ($eq).
-Removed top 2 bits (of 5) from wire seq_detector.$verific$n41$43.
+Removed top 4 bits (of 5) from port B of cell seq_detector.$verific$equal_13$seq_detector.sv:19$56 ($eq).
+Removed top 3 bits (of 5) from port B of cell seq_detector.$verific$equal_14$seq_detector.sv:20$57 ($eq).
+Removed top 2 bits (of 5) from port B of cell seq_detector.$verific$equal_15$seq_detector.sv:21$58 ($eq).
+Removed top 1 bits (of 5) from port B of cell seq_detector.$verific$equal_16$seq_detector.sv:22$59 ($eq).
+Removed top 2 bits (of 5) from wire seq_detector.$verific$n41$48.
 
 3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \seq_detector..
@@ -191,24 +188,27 @@ Finding unused cells or wires in module \seq_detector..
 
 === seq_detector ===
 
-   Number of wires:                 46
-   Number of wire bits:             58
+   Number of wires:                 52
+   Number of wire bits:             64
    Number of public wires:           6
    Number of public wire bits:      14
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 46
-     $adff                          11
+   Number of cells:                 53
+     $adff                          13
      $aldff                          2
      $and                            9
      $assert                         2
+     $assume                         1
      $cover                          1
      $eq                             6
-     $not                            5
+     $initstate                      1
+     $not                            7
      $or                             7
      $pmux                           1
      $reduce_or                      2
+     $xor                            1
 
 3.12. Executing CHECK pass (checking for obvious problems).
 Checking module seq_detector...
@@ -229,7 +229,7 @@ Module seq_detector directly or indirectly contains formal properties -> setting
 6. Executing RTLIL backend.
 Output filename: ../model/design.il
 
-Warnings: 3 unique messages, 3 total
-End of script. Logfile hash: 5a1d8aa60e, CPU: user 0.02s system 0.00s, MEM: 29.52 MB peak
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: eeb46aef3e, CPU: user 0.05s system 0.04s, MEM: 27.95 MB peak
 Yosys 0.26 (git sha1 7e588664e, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 22% 6x opt_expr (0 sec), 19% 5x opt_clean (0 sec), ...
+Time spent: 25% 3x hierarchy (0 sec), 23% 6x opt_expr (0 sec), ...

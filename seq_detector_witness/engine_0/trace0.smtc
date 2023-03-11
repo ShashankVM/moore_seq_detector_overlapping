@@ -1,30 +1,34 @@
 initial
-assume (= [$auto$async2sync.cc:139:execute$204] #b00001)
-assume (= [$auto$async2sync.cc:171:execute$211] #b0)
-assume (= [$auto$async2sync.cc:171:execute$213] #b0)
-assume (= [$auto$async2sync.cc:171:execute$215] #b0)
-assume (= [$auto$async2sync.cc:171:execute$217] #b0)
-assume (= [$auto$async2sync.cc:171:execute$219] #b0)
-assume (= [$auto$async2sync.cc:171:execute$221] #b0)
-assume (= [$auto$async2sync.cc:171:execute$223] #b0)
-assume (= [$auto$async2sync.cc:171:execute$225] #b0)
-assume (= [$auto$async2sync.cc:171:execute$227] #b0)
-assume (= [_witness_.anyinit_verific_detect_out_reg_seq_detector_sv_30_47] #b0)
+assume (= [$auto$async2sync.cc:171:execute$276] #b0)
+assume (= [$auto$async2sync.cc:171:execute$278] #b0)
+assume (= [$auto$async2sync.cc:171:execute$280] #b0)
+assume (= [$auto$async2sync.cc:171:execute$282] #b0)
+assume (= [$auto$async2sync.cc:171:execute$284] #b0)
+assume (= [$auto$async2sync.cc:171:execute$286] #b0)
+assume (= [$auto$async2sync.cc:171:execute$288] #b0)
+assume (= [$auto$async2sync.cc:171:execute$290] #b0)
+assume (= [$auto$async2sync.cc:171:execute$292] #b0)
+assume (= [$auto$async2sync.cc:171:execute$294] #b0)
+assume (= [$auto$async2sync.cc:171:execute$296] #b0)
+assume (= [$auto$async2sync.cc:171:execute$298] #b0)
+assume (= [$auto$async2sync.cc:171:execute$300] #b0)
+assume (= [_witness_.anyinit_verific_detect_out_reg_seq_detector_sv_30_67] #b0)
+assume (= [_witness_.anyinit_verific_state_reg_seq_detector_sv_13_54] #b00000)
 
 state 0
 assume (= [clk] false)
-assume (= [reset] #b0)
+assume (= [reset] #b1)
 assume (= [seq_in] true)
 
 state 1
 assume (= [clk] false)
 assume (= [reset] #b0)
-assume (= [seq_in] false)
+assume (= [seq_in] true)
 
 state 2
 assume (= [clk] false)
 assume (= [reset] #b0)
-assume (= [seq_in] true)
+assume (= [seq_in] false)
 
 state 3
 assume (= [clk] false)
@@ -34,7 +38,7 @@ assume (= [seq_in] true)
 state 4
 assume (= [clk] false)
 assume (= [reset] #b0)
-assume (= [seq_in] false)
+assume (= [seq_in] true)
 
 state 5
 assume (= [clk] false)
@@ -42,6 +46,11 @@ assume (= [reset] #b0)
 assume (= [seq_in] false)
 
 state 6
+assume (= [clk] false)
+assume (= [reset] #b0)
+assume (= [seq_in] false)
+
+state 7
 assume (= [clk] false)
 assume (= [reset] #b0)
 assume (= [seq_in] false)

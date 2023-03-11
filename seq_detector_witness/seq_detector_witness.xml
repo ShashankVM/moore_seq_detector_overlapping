@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2023-02-22T11:28:40" hostname="shashank-Latitude-3520" package="seq_detector" id="0" name="witness" tests="2" errors="0" failures="0" time="0" skipped="1">
+<testsuite timestamp="2023-03-10T22:06:45" hostname="shashank-Latitude-3520" package="seq_detector" id="0" name="witness" tests="3" errors="0" failures="0" time="1" skipped="2">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
@@ -8,58 +8,60 @@
 </properties>
 <testcase classname="witness" name="build execution" time="0">
 </testcase>
-<testcase classname="witness" name="Property COVER in seq_detector at seq_detector.sv:46" time="0" type="COVER" location="seq_detector.sv:46" id="SEQ_DETECT_WITNESS" tracefile="engine_0/trace0.vcd">
+<testcase classname="witness" name="Property COVER in seq_detector at seq_detector.sv:52" time="0" type="COVER" location="seq_detector.sv:52" id="SEQ_DETECT_WITNESS" tracefile="engine_0/trace0.vcd">
 </testcase>
-<testcase classname="witness" name="Property ASSERT in seq_detector at seq_detector.sv:45" time="0" type="ASSERT" location="seq_detector.sv:45" id="ASSERT_CHK_SEQ_DETECT">
+<testcase classname="witness" name="Property ASSERT in seq_detector at seq_detector.sv:50" time="0" type="ASSERT" location="seq_detector.sv:50" id="ASSERT_CHK_SEQ_DETECT">
 <skipped />
 </testcase>
-<system-out>SBY 11:28:40 [seq_detector_witness] Removing directory '/home/shashank/moore_seq_detector/seq_detector_witness'.
-SBY 11:28:40 [seq_detector_witness] Copy '/home/shashank/moore_seq_detector/seq_detector.sv' to '/home/shashank/moore_seq_detector/seq_detector_witness/src/seq_detector.sv'.
-SBY 11:28:40 [seq_detector_witness] engine_0: smtbmc boolector
-SBY 11:28:40 [seq_detector_witness] base: starting process &quot;cd seq_detector_witness/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 11:28:40 [seq_detector_witness] base: This is an EVALUATION LICENSE of Tabby CAD Suite.
-SBY 11:28:40 [seq_detector_witness] base: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
-SBY 11:28:40 [seq_detector_witness] base: This license was issued to Shashank V M.
-SBY 11:28:40 [seq_detector_witness] base: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
-SBY 11:28:40 [seq_detector_witness] base: VERIFIC-WARNING [VERI-1924] seq_detector.sv:7: variable 'state' is driven by invalid combination of procedural drivers
-SBY 11:28:40 [seq_detector_witness] base: VERIFIC-WARNING [VERI-1971] seq_detector.sv:13: 'state' driven by this always_ff block should not be driven by any other process
-SBY 11:28:40 [seq_detector_witness] base: VERIFIC-WARNING [VERI-1995] seq_detector.sv:24: unique/priority if/case is not full
-SBY 11:28:40 [seq_detector_witness] base: finished (returncode=0)
-SBY 11:28:40 [seq_detector_witness] prep: starting process &quot;cd seq_detector_witness/model; yosys -ql design_prep.log design_prep.ys&quot;
-SBY 11:28:40 [seq_detector_witness] prep: This is an EVALUATION LICENSE of Tabby CAD Suite.
-SBY 11:28:40 [seq_detector_witness] prep: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
-SBY 11:28:40 [seq_detector_witness] prep: This license was issued to Shashank V M.
-SBY 11:28:40 [seq_detector_witness] prep: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
-SBY 11:28:40 [seq_detector_witness] prep: finished (returncode=0)
-SBY 11:28:40 [seq_detector_witness] smt2: starting process &quot;cd seq_detector_witness/model; yosys -ql design_smt2.log design_smt2.ys&quot;
-SBY 11:28:40 [seq_detector_witness] smt2: This is an EVALUATION LICENSE of Tabby CAD Suite.
-SBY 11:28:40 [seq_detector_witness] smt2: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
-SBY 11:28:40 [seq_detector_witness] smt2: This license was issued to Shashank V M.
-SBY 11:28:40 [seq_detector_witness] smt2: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
-SBY 11:28:40 [seq_detector_witness] smt2: finished (returncode=0)
-SBY 11:28:40 [seq_detector_witness] engine_0: starting process &quot;cd seq_detector_witness; yosys-smtbmc -s boolector --presat --unroll -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Solver: boolector
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 0..
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 1..
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 2..
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 3..
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 4..
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 5..
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 6..
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Reached cover statement at SEQ_DETECT_WITNESS in step 6.
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
-SBY 11:28:40 [seq_detector_witness] engine_0: ##   0:00:00  Status: passed
-SBY 11:28:40 [seq_detector_witness] engine_0: finished (returncode=0)
-SBY 11:28:40 [seq_detector_witness] engine_0: Status returned by engine: pass
-SBY 11:28:40 [seq_detector_witness] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 11:28:40 [seq_detector_witness] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 11:28:40 [seq_detector_witness] summary: engine_0 (smtbmc boolector) returned pass
-SBY 11:28:40 [seq_detector_witness] summary: cover trace: seq_detector_witness/engine_0/trace0.vcd
-SBY 11:28:40 [seq_detector_witness] summary:   reached cover statement seq_detector.SEQ_DETECT_WITNESS at seq_detector.sv:46 in step 6
-SBY 11:28:40 [seq_detector_witness] DONE (PASS, rc=0)
+<testcase classname="witness" name="Property ASSERT in seq_detector at seq_detector.sv:51" time="0" type="ASSERT" location="seq_detector.sv:51" id="ASSERT_ONE_HOT_STATE_ENCODING">
+<skipped />
+</testcase>
+<system-out>SBY 22:06:43 [seq_detector_witness] Removing directory '/home/shashank/moore_seq_detector_overlapping/seq_detector_witness'.
+SBY 22:06:43 [seq_detector_witness] Copy '/home/shashank/moore_seq_detector_overlapping/seq_detector.sv' to '/home/shashank/moore_seq_detector_overlapping/seq_detector_witness/src/seq_detector.sv'.
+SBY 22:06:43 [seq_detector_witness] engine_0: smtbmc boolector
+SBY 22:06:43 [seq_detector_witness] base: starting process &quot;cd seq_detector_witness/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 22:06:44 [seq_detector_witness] base: This is an EVALUATION LICENSE of Tabby CAD Suite.
+SBY 22:06:44 [seq_detector_witness] base: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
+SBY 22:06:44 [seq_detector_witness] base: This license was issued to Shashank V M.
+SBY 22:06:44 [seq_detector_witness] base: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
+SBY 22:06:44 [seq_detector_witness] base: VERIFIC-WARNING [VERI-1995] seq_detector.sv:24: unique/priority if/case is not full
+SBY 22:06:44 [seq_detector_witness] base: finished (returncode=0)
+SBY 22:06:44 [seq_detector_witness] prep: starting process &quot;cd seq_detector_witness/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 22:06:44 [seq_detector_witness] prep: This is an EVALUATION LICENSE of Tabby CAD Suite.
+SBY 22:06:44 [seq_detector_witness] prep: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
+SBY 22:06:44 [seq_detector_witness] prep: This license was issued to Shashank V M.
+SBY 22:06:44 [seq_detector_witness] prep: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
+SBY 22:06:44 [seq_detector_witness] prep: finished (returncode=0)
+SBY 22:06:44 [seq_detector_witness] smt2: starting process &quot;cd seq_detector_witness/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 22:06:44 [seq_detector_witness] smt2: This is an EVALUATION LICENSE of Tabby CAD Suite.
+SBY 22:06:44 [seq_detector_witness] smt2: This license is granted for the limited purpose of evaluating Tabby CAD Suite only.
+SBY 22:06:44 [seq_detector_witness] smt2: This license was issued to Shashank V M.
+SBY 22:06:44 [seq_detector_witness] smt2: Customer PoC: Shashank V M &lt;shashankmathew8@gmail.com&gt;.
+SBY 22:06:44 [seq_detector_witness] smt2: finished (returncode=0)
+SBY 22:06:44 [seq_detector_witness] engine_0: starting process &quot;cd seq_detector_witness; yosys-smtbmc -s boolector --presat --unroll -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 22:06:44 [seq_detector_witness] engine_0: ##   0:00:00  Solver: boolector
+SBY 22:06:44 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Reached cover statement at SEQ_DETECT_WITNESS in step 7.
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 22:06:45 [seq_detector_witness] engine_0: ##   0:00:00  Status: passed
+SBY 22:06:45 [seq_detector_witness] engine_0: finished (returncode=0)
+SBY 22:06:45 [seq_detector_witness] engine_0: Status returned by engine: pass
+SBY 22:06:45 [seq_detector_witness] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 22:06:45 [seq_detector_witness] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 22:06:45 [seq_detector_witness] summary: engine_0 (smtbmc boolector) returned pass
+SBY 22:06:45 [seq_detector_witness] summary: cover trace: seq_detector_witness/engine_0/trace0.vcd
+SBY 22:06:45 [seq_detector_witness] summary:   reached cover statement seq_detector.SEQ_DETECT_WITNESS at seq_detector.sv:52 in step 7
+SBY 22:06:45 [seq_detector_witness] DONE (PASS, rc=0)
 </system-out>
 <system-err>
 </system-err>

@@ -5,7 +5,7 @@ mode prove
 smtbmc boolector
 
 [script]
-read -sv seq_detector.sv
+read -formal seq_detector.sv
 hierarchy -check -top seq_detector
 prep -top seq_detector
 

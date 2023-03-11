@@ -26,7 +26,7 @@
                 {
                   "name": "SEQ_DETECT_WITNESS",
                   "attributes": {
-                    "src": "seq_detector.sv:46"
+                    "src": "seq_detector.sv:52"
                   },
                   "parameters": {
 
@@ -60,13 +60,69 @@
             ],
             "cells": [
                 {
-                  "name": "$verific$select_19$seq_detector.sv:24$44",
+                  "name": "$verific$select_19$seq_detector.sv:24$64",
                   "attributes": {
                     "src": "seq_detector.sv:24"
                   },
                   "parameters": {
                     "S_WIDTH": "00000000000000000000000000000101",
                     "WIDTH": "00000000000000000000000000000101"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$xor",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i28$seq_detector.sv:34$72",
+                  "attributes": {
+                    "src": "seq_detector.sv:34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$initstate",
+            "ports": [
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i27$seq_detector.sv:34$70",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+
                   }
                 }
             ]
@@ -102,7 +158,7 @@
             ],
             "cells": [
                 {
-                  "name": "$verific$detect_out_reg$seq_detector.sv:30$47",
+                  "name": "$verific$detect_out_reg$seq_detector.sv:30$67",
                   "attributes": {
                     "src": "seq_detector.sv:30"
                   },
@@ -113,7 +169,7 @@
                   }
                 },
                 {
-                  "name": "$verific$state_reg$seq_detector.sv:13$34",
+                  "name": "$verific$state_reg$seq_detector.sv:13$54",
                   "attributes": {
                     "src": "seq_detector.sv:13"
                   },
@@ -121,132 +177,6 @@
                     "ALOAD_POLARITY": "00000000000000000000000000000001",
                     "CLK_POLARITY": "00000000000000000000000000000001",
                     "WIDTH": "00000000000000000000000000000101"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$assert",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "EN",
-                  "direction": "io",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "ASSERT_CHK_SEQ_DETECT",
-                  "attributes": {
-                    "src": "seq_detector.sv:45"
-                  },
-                  "parameters": {
-
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$eq",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [2, 0]
-                },
-                {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [2, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$auto$verificsva.cc:630:make_cond_eq$121",
-                  "attributes": {
-
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000010",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000010",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$verific$equal_13$seq_detector.sv:19$36",
-                  "attributes": {
-                    "src": "seq_detector.sv:19"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000101",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$verific$equal_14$seq_detector.sv:20$37",
-                  "attributes": {
-                    "src": "seq_detector.sv:20"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000101",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000010",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$verific$equal_15$seq_detector.sv:21$38",
-                  "attributes": {
-                    "src": "seq_detector.sv:21"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000101",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000011",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$verific$equal_16$seq_detector.sv:22$39",
-                  "attributes": {
-                    "src": "seq_detector.sv:22"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000101",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000100",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$verific$equal_17$seq_detector.sv:23$40",
-                  "attributes": {
-                    "src": "seq_detector.sv:23"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000101",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000101",
-                    "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 }
             ]
@@ -272,7 +202,7 @@
             ],
             "cells": [
                 {
-                  "name": "$auto$verificsva.cc:329:getAccept$153",
+                  "name": "$auto$verificsva.cc:329:getAccept$135",
                   "attributes": {
 
                   },
@@ -285,7 +215,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:329:getAccept$163",
+                  "name": "$auto$verificsva.cc:329:getAccept$141",
                   "attributes": {
 
                   },
@@ -298,7 +228,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:329:getAccept$171",
+                  "name": "$auto$verificsva.cc:329:getAccept$151",
                   "attributes": {
 
                   },
@@ -311,9 +241,74 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:329:getAccept$87",
+                  "name": "$auto$verificsva.cc:329:getAccept$228",
                   "attributes": {
 
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i43$seq_detector.sv:51$86",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i45$seq_detector.sv:51$88",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i48$seq_detector.sv:51$91",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i51$seq_detector.sv:51$94",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i54$seq_detector.sv:51$97",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
@@ -351,7 +346,7 @@
             ],
             "cells": [
                 {
-                  "name": "$auto$verificsva.cc:1813:import$132",
+                  "name": "$auto$verificsva.cc:1813:import$116",
                   "attributes": {
 
                   },
@@ -363,7 +358,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:1813:import$198",
+                  "name": "$auto$verificsva.cc:1813:import$186",
                   "attributes": {
 
                   },
@@ -375,7 +370,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:1814:import$133",
+                  "name": "$auto$verificsva.cc:1813:import$197",
                   "attributes": {
 
                   },
@@ -387,7 +382,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:1814:import$199",
+                  "name": "$auto$verificsva.cc:1813:import$263",
                   "attributes": {
 
                   },
@@ -399,7 +394,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:362:getAccept$109",
+                  "name": "$auto$verificsva.cc:1814:import$117",
                   "attributes": {
 
                   },
@@ -411,7 +406,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:362:getAccept$110",
+                  "name": "$auto$verificsva.cc:1814:import$187",
                   "attributes": {
 
                   },
@@ -423,7 +418,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:362:getAccept$111",
+                  "name": "$auto$verificsva.cc:1814:import$198",
                   "attributes": {
 
                   },
@@ -435,7 +430,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:362:getAccept$112",
+                  "name": "$auto$verificsva.cc:1814:import$264",
                   "attributes": {
 
                   },
@@ -447,7 +442,7 @@
                   }
                 },
                 {
-                  "name": "$auto$verificsva.cc:362:getAccept$191",
+                  "name": "$auto$verificsva.cc:362:getAccept$163",
                   "attributes": {
 
                   },
@@ -456,6 +451,328 @@
                     "ARST_VALUE": "0",
                     "CLK_POLARITY": "00000000000000000000000000000001",
                     "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:362:getAccept$164",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000001",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:362:getAccept$165",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000001",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:362:getAccept$166",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000001",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:362:getAccept$256",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000001",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "00000000000000000000000000000001",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assert",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "ASSERT_CHK_SEQ_DETECT",
+                  "attributes": {
+                    "src": "seq_detector.sv:50"
+                  },
+                  "parameters": {
+
+                  }
+                },
+                {
+                  "name": "ASSERT_ONE_HOT_STATE_ENCODING",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$verific$i42$seq_detector.sv:51$85",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i44$seq_detector.sv:51$87",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i46$seq_detector.sv:51$89",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i47$seq_detector.sv:51$90",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i49$seq_detector.sv:51$92",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i50$seq_detector.sv:51$93",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i52$seq_detector.sv:51$95",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$verificsva.cc:630:make_cond_eq$175",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$equal_13$seq_detector.sv:19$56",
+                  "attributes": {
+                    "src": "seq_detector.sv:19"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$equal_14$seq_detector.sv:20$57",
+                  "attributes": {
+                    "src": "seq_detector.sv:20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$equal_15$seq_detector.sv:21$58",
+                  "attributes": {
+                    "src": "seq_detector.sv:21"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$equal_16$seq_detector.sv:22$59",
+                  "attributes": {
+                    "src": "seq_detector.sv:22"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$equal_17$seq_detector.sv:23$60",
+                  "attributes": {
+                    "src": "seq_detector.sv:23"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000101",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assume",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$verificsva.cc:1726:import$188",
+                  "attributes": {
+                    "src": "seq_detector.sv:34"
+                  },
+                  "parameters": {
+
                   }
                 }
             ]
@@ -476,7 +793,7 @@
             ],
             "cells": [
                 {
-                  "name": "$auto$verificsva.cc:1800:import$126",
+                  "name": "$auto$verificsva.cc:1606:parse_property$108",
                   "attributes": {
 
                   },
@@ -487,7 +804,51 @@
                   }
                 },
                 {
-                  "name": "$verific$i48$seq_detector.sv:19$31",
+                  "name": "$auto$verificsva.cc:1606:parse_property$189",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$verificsva.cc:1800:import$180",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i26$seq_detector.sv:34$68",
+                  "attributes": {
+                    "src": "seq_detector.sv:34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i53$seq_detector.sv:51$96",
+                  "attributes": {
+                    "src": "seq_detector.sv:51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$verific$i70$seq_detector.sv:19$51",
                   "attributes": {
                     "src": "seq_detector.sv:19"
                   },
@@ -498,7 +859,7 @@
                   }
                 },
                 {
-                  "name": "$verific$reduce_nor_18$seq_detector.sv:24$41",
+                  "name": "$verific$reduce_nor_18$seq_detector.sv:24$61",
                   "attributes": {
                     "src": "seq_detector.sv:24"
                   },
@@ -526,7 +887,7 @@
             ],
             "cells": [
                 {
-                  "name": "$auto$opt_reduce.cc:128:opt_pmux$200",
+                  "name": "$auto$opt_reduce.cc:128:opt_pmux$265",
                   "attributes": {
 
                   },
@@ -537,7 +898,7 @@
                   }
                 },
                 {
-                  "name": "$verific$reduce_nor_18$seq_detector.sv:24$42",
+                  "name": "$verific$reduce_nor_18$seq_detector.sv:24$62",
                   "attributes": {
 
                   },

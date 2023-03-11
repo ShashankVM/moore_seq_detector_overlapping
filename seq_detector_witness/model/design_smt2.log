@@ -34,25 +34,28 @@ Module seq_detector directly or indirectly contains formal properties -> setting
 
 === seq_detector ===
 
-   Number of wires:                 53
-   Number of wire bits:             73
-   Number of public wires:           7
-   Number of public wire bits:      15
+   Number of wires:                 83
+   Number of wire bits:            103
+   Number of public wires:           8
+   Number of public wire bits:      20
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 53
-     $and                            4
-     $anyinit                        1
-     $assert                         1
-     $assume                         1
+   Number of cells:                 85
+     $and                            9
+     $anyinit                        2
+     $assert                         2
+     $assume                         2
      $cover                          1
      $eq                             6
-     $ff                            10
-     $mux                           22
-     $not                            4
+     $ff                            13
+     $initstate                      1
+     $mux                           30
+     $not                            8
+     $or                             7
      $pmux                           1
      $reduce_or                      2
+     $xor                            1
 
 6. Executing SMT2 backend.
 
@@ -61,6 +64,6 @@ Module seq_detector directly or indirectly contains formal properties -> setting
 6.2. Executing DEMUXMAP pass.
 Creating SMT-LIBv2 representation of module seq_detector.
 
-End of script. Logfile hash: 1748ae299b, CPU: user 0.01s system 0.01s, MEM: 21.34 MB peak
+End of script. Logfile hash: e448de87b9, CPU: user 0.00s system 0.01s, MEM: 21.79 MB peak
 Yosys 0.26 (git sha1 7e588664e, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 57% 2x write_smt2 (0 sec), 28% 2x read_ilang (0 sec), ...
+Time spent: 57% 2x write_smt2 (0 sec), 26% 2x read_ilang (0 sec), ...

@@ -25,17 +25,21 @@ Found 0 SCCs.
 4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
 
 5. Executing ASYNC2SYNC pass.
-Replacing seq_detector.$verific$state_reg$seq_detector.sv:13$34 ($aldff): ALOAD=\reset, AD=5'00001, D=\next, Q=\state
-Replacing seq_detector.$verific$detect_out_reg$seq_detector.sv:30$47 ($aldff): ALOAD=\reset, AD=1'0, D=$verific$n55$7, Q=\detect_out
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$191 ($adff): ARST=\reset, D=$auto$verificsva.cc:293:getAccept$78, Q=$auto$verificsva.cc:293:getAccept$149
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$112 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$108, Q=$auto$verificsva.cc:293:getAccept$78
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$111 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$106, Q=$auto$verificsva.cc:293:getAccept$76
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$110 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$104, Q=$auto$verificsva.cc:293:getAccept$73
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$109 ($adff): ARST=\reset, D=\seq_in, Q=$auto$verificsva.cc:293:getAccept$71
-Replacing seq_detector.$auto$verificsva.cc:1814:import$199 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$164, Q=$auto$verificsva.cc:1812:import$197
-Replacing seq_detector.$auto$verificsva.cc:1814:import$133 ($adff): ARST=\reset, D=$auto$rtlil.cc:2403:ReduceOr$125, Q=$auto$verificsva.cc:1812:import$131
-Replacing seq_detector.$auto$verificsva.cc:1813:import$198 ($adff): ARST=\reset, D=1'1, Q=$auto$verificsva.cc:1811:import$196
-Replacing seq_detector.$auto$verificsva.cc:1813:import$132 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$127, Q=$auto$verificsva.cc:1811:import$130
+Replacing seq_detector.$verific$state_reg$seq_detector.sv:13$54 ($aldff): ALOAD=\reset, AD=5'00001, D=\next, Q=\state
+Replacing seq_detector.$verific$detect_out_reg$seq_detector.sv:30$67 ($aldff): ALOAD=\reset, AD=1'0, D=$verific$n55$7, Q=\detect_out
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$256 ($adff): ARST=\reset, D=$auto$verificsva.cc:293:getAccept$132, Q=$auto$verificsva.cc:293:getAccept$214
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$166 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$142, Q=$auto$verificsva.cc:293:getAccept$132
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$165 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$152, Q=$auto$verificsva.cc:293:getAccept$130
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$164 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$136, Q=$auto$verificsva.cc:293:getAccept$127
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$163 ($adff): ARST=\reset, D=\seq_in, Q=$auto$verificsva.cc:293:getAccept$125
+Replacing seq_detector.$auto$verificsva.cc:1814:import$264 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$229, Q=$auto$verificsva.cc:1812:import$262
+Replacing seq_detector.$auto$verificsva.cc:1814:import$198 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$190, Q=$auto$verificsva.cc:1812:import$196
+Replacing seq_detector.$auto$verificsva.cc:1814:import$187 ($adff): ARST=\reset, D=$auto$rtlil.cc:2403:ReduceOr$179, Q=$auto$verificsva.cc:1812:import$185
+Replacing seq_detector.$auto$verificsva.cc:1814:import$117 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$109, Q=$auto$verificsva.cc:1812:import$115
+Replacing seq_detector.$auto$verificsva.cc:1813:import$263 ($adff): ARST=\reset, D=1'1, Q=$auto$verificsva.cc:1811:import$261
+Replacing seq_detector.$auto$verificsva.cc:1813:import$197 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$192, Q=$auto$verificsva.cc:1811:import$195
+Replacing seq_detector.$auto$verificsva.cc:1813:import$186 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$181, Q=$auto$verificsva.cc:1811:import$184
+Replacing seq_detector.$auto$verificsva.cc:1813:import$116 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$111, Q=$auto$verificsva.cc:1811:import$114
 
 6. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \seq_detector..
@@ -73,12 +77,12 @@ Removed 4 unused cells and 4 unused wires.
 
 12. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \seq_detector..
-Removed 0 unused cells and 1 unused wires.
+Removed 0 unused cells and 2 unused wires.
 <suppressed ~1 debug messages>
 
 13. Executing RTLIL backend.
 Output filename: ../model/design_prep.il
 
-End of script. Logfile hash: 395a90e919, CPU: user 0.02s system 0.00s, MEM: 21.69 MB peak
+End of script. Logfile hash: d2a64a0a77, CPU: user 0.06s system 0.02s, MEM: 21.53 MB peak
 Yosys 0.26 (git sha1 7e588664e, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 37% 4x opt_clean (0 sec), 12% 1x opt_expr (0 sec), ...
+Time spent: 39% 4x opt_clean (0 sec), 12% 1x opt_expr (0 sec), ...

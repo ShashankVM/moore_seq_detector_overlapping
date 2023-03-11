@@ -25,19 +25,21 @@ Found 0 SCCs.
 4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
 
 5. Executing ASYNC2SYNC pass.
-Replacing seq_detector.$verific$state_reg$seq_detector.sv:13$49 ($aldff): ALOAD=\reset, AD=5'00001, D=\next, Q=\state
-Replacing seq_detector.$verific$detect_out_reg$seq_detector.sv:30$62 ($aldff): ALOAD=\reset, AD=1'0, D=$verific$n55$7, Q=\detect_out
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$232 ($adff): ARST=\reset, D=$auto$verificsva.cc:293:getAccept$119, Q=$auto$verificsva.cc:293:getAccept$190
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$153 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$129, Q=$auto$verificsva.cc:293:getAccept$119
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$152 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$139, Q=$auto$verificsva.cc:293:getAccept$117
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$151 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$123, Q=$auto$verificsva.cc:293:getAccept$114
-Replacing seq_detector.$auto$verificsva.cc:362:getAccept$150 ($adff): ARST=\reset, D=\seq_in, Q=$auto$verificsva.cc:293:getAccept$112
-Replacing seq_detector.$auto$verificsva.cc:1814:import$240 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$205, Q=$auto$verificsva.cc:1812:import$238
-Replacing seq_detector.$auto$verificsva.cc:1814:import$174 ($adff): ARST=\reset, D=$auto$rtlil.cc:2403:ReduceOr$166, Q=$auto$verificsva.cc:1812:import$172
-Replacing seq_detector.$auto$verificsva.cc:1814:import$104 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$96, Q=$auto$verificsva.cc:1812:import$102
-Replacing seq_detector.$auto$verificsva.cc:1813:import$239 ($adff): ARST=\reset, D=1'1, Q=$auto$verificsva.cc:1811:import$237
-Replacing seq_detector.$auto$verificsva.cc:1813:import$173 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$168, Q=$auto$verificsva.cc:1811:import$171
-Replacing seq_detector.$auto$verificsva.cc:1813:import$103 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$98, Q=$auto$verificsva.cc:1811:import$101
+Replacing seq_detector.$verific$state_reg$seq_detector.sv:13$54 ($aldff): ALOAD=\reset, AD=5'00001, D=\next, Q=\state
+Replacing seq_detector.$verific$detect_out_reg$seq_detector.sv:30$67 ($aldff): ALOAD=\reset, AD=1'0, D=$verific$n55$7, Q=\detect_out
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$256 ($adff): ARST=\reset, D=$auto$verificsva.cc:293:getAccept$132, Q=$auto$verificsva.cc:293:getAccept$214
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$166 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$142, Q=$auto$verificsva.cc:293:getAccept$132
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$165 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$152, Q=$auto$verificsva.cc:293:getAccept$130
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$164 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$136, Q=$auto$verificsva.cc:293:getAccept$127
+Replacing seq_detector.$auto$verificsva.cc:362:getAccept$163 ($adff): ARST=\reset, D=\seq_in, Q=$auto$verificsva.cc:293:getAccept$125
+Replacing seq_detector.$auto$verificsva.cc:1814:import$264 ($adff): ARST=\reset, D=$auto$rtlil.cc:2429:And$229, Q=$auto$verificsva.cc:1812:import$262
+Replacing seq_detector.$auto$verificsva.cc:1814:import$198 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$190, Q=$auto$verificsva.cc:1812:import$196
+Replacing seq_detector.$auto$verificsva.cc:1814:import$187 ($adff): ARST=\reset, D=$auto$rtlil.cc:2403:ReduceOr$179, Q=$auto$verificsva.cc:1812:import$185
+Replacing seq_detector.$auto$verificsva.cc:1814:import$117 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$109, Q=$auto$verificsva.cc:1812:import$115
+Replacing seq_detector.$auto$verificsva.cc:1813:import$263 ($adff): ARST=\reset, D=1'1, Q=$auto$verificsva.cc:1811:import$261
+Replacing seq_detector.$auto$verificsva.cc:1813:import$197 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$192, Q=$auto$verificsva.cc:1811:import$195
+Replacing seq_detector.$auto$verificsva.cc:1813:import$186 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$181, Q=$auto$verificsva.cc:1811:import$184
+Replacing seq_detector.$auto$verificsva.cc:1813:import$116 ($adff): ARST=\reset, D=$auto$rtlil.cc:2399:Not$111, Q=$auto$verificsva.cc:1811:import$114
 
 6. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \seq_detector..
@@ -75,12 +77,12 @@ Removed 3 unused cells and 3 unused wires.
 
 12. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \seq_detector..
-Removed 0 unused cells and 1 unused wires.
+Removed 0 unused cells and 2 unused wires.
 <suppressed ~1 debug messages>
 
 13. Executing RTLIL backend.
 Output filename: ../model/design_prep.il
 
-End of script. Logfile hash: e1fb2b80da, CPU: user 0.01s system 0.01s, MEM: 21.52 MB peak
+End of script. Logfile hash: 435a5ee97a, CPU: user 0.05s system 0.01s, MEM: 21.38 MB peak
 Yosys 0.26 (git sha1 7e588664e, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 37% 4x opt_clean (0 sec), 12% 1x opt_expr (0 sec), ...
+Time spent: 36% 4x opt_clean (0 sec), 11% 1x opt_expr (0 sec), ...
