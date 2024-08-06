@@ -1,0 +1,55 @@
+$date
+  Tue Aug  6 20:28:17 2024
+$end
+$timescale
+  1ns
+$end
+$scope module seq_detector $end
+  $var wire 5 seq_detector.S0 S0 [4:0] $end
+  $var wire 5 seq_detector.S1 S1 [4:0] $end
+  $var wire 5 seq_detector.S2 S2 [4:0] $end
+  $var wire 5 seq_detector.S3 S3 [4:0] $end
+  $var wire 5 seq_detector.S4 S4 [4:0] $end
+  $var wire 1 seq_detector.seq_in seq_in $end
+  $var wire 1 seq_detector.clk clk $end
+  $var wire 1 seq_detector.reset reset $end
+  $var reg 1 seq_detector.detect_out detect_out $end
+  $var reg 5 seq_detector.state state [4:0] $end
+  $var wire 5 seq_detector.next next [4:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+0seq_detector.seq_in
+1seq_detector.reset
+0seq_detector.detect_out
+b00001 seq_detector.S0
+b00010 seq_detector.S1
+b00100 seq_detector.S2
+b01000 seq_detector.S3
+b10000 seq_detector.S4
+b00001 seq_detector.state
+b00001 seq_detector.next
+#1
+1seq_detector.seq_in
+0seq_detector.reset
+b00010 seq_detector.next
+#2
+b00010 seq_detector.state
+#3
+0seq_detector.seq_in
+b00100 seq_detector.next
+#4
+1seq_detector.seq_in
+b00100 seq_detector.state
+b01000 seq_detector.next
+#5
+b01000 seq_detector.state
+b10000 seq_detector.next
+#6
+b10000 seq_detector.state
+b00010 seq_detector.next
+#7
+0seq_detector.seq_in
+1seq_detector.detect_out
+b00010 seq_detector.state
+b00100 seq_detector.next

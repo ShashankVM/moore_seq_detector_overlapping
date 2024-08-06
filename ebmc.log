@@ -1,0 +1,31 @@
+Parsing seq_detector.sv
+Converting
+Type-checking Verilog::seq_detector
+Generating Decision Problem
+Using MiniSAT 2.2.1 with simplifier
+Properties
+Solving with propositional reduction
+Checking seq_detector.ASSERT_OVERLAPPING_PROPERTY
+SAT checker: instance is UNSATISFIABLE
+UNSAT: No counterexample found within bound
+Checking seq_detector.ASSERT_CHK_SEQ_DETECT
+SAT checker: instance is UNSATISFIABLE
+UNSAT: No counterexample found within bound
+Checking seq_detector.ASSERT_BI
+SAT checker: instance is UNSATISFIABLE
+UNSAT: No counterexample found within bound
+Checking seq_detector.COVER_NON_OVERLAPPING_SEQUENCE
+SAT checker: instance is SATISFIABLE
+SAT: path found
+Checking seq_detector.COVER_OVERLAPPING_SEQUENCE
+SAT checker: instance is SATISFIABLE
+SAT: path found
+
+** Results:
+[seq_detector.ASSUME_VALID_STATE1] always $onehot(seq_detector.state): ASSUMED
+[seq_detector.ASSUME_VALID_STATE2] always (seq_detector.reset |-> seq_detector.state == seq_detector.S0): ASSUMED
+[seq_detector.ASSERT_OVERLAPPING_PROPERTY] always (seq_detector.state == seq_detector.S4 |-> seq_detector.next != seq_detector.S0): PROVED up to bound 500
+[seq_detector.ASSERT_CHK_SEQ_DETECT] always (disable iff (seq_detector.reset) (seq_detector.seq_in ##1 !seq_detector.seq_in ##1 seq_detector.seq_in ##1 seq_detector.seq_in) |-> (##2 seq_detector.detect_out)): PROVED up to bound 500
+[seq_detector.ASSERT_BI] always (disable iff (seq_detector.reset) seq_detector.detect_out |-> $past(seq_detector.seq_in, 2) == 1 && $past(seq_detector.seq_in, 3) == 1 && $past(seq_detector.seq_in, 4) == 0 && $past(seq_detector.seq_in, 5) == 1): PROVED up to bound 500
+[seq_detector.COVER_NON_OVERLAPPING_SEQUENCE] cover (seq_detector.seq_in ##1 !seq_detector.seq_in ##1 seq_detector.seq_in ##1 seq_detector.seq_in ##2 !seq_detector.seq_in): PROVED
+[seq_detector.COVER_OVERLAPPING_SEQUENCE] cover (seq_detector.seq_in ##1 !seq_detector.seq_in ##1 seq_detector.seq_in ##1 seq_detector.seq_in ##1 !seq_detector.seq_in ##1 seq_detector.seq_in ##1 seq_detector.seq_in ##3 seq_detector.seq_in): PROVED
