@@ -1,8 +1,0 @@
-# running in seq_detector_prove/src/
-read -formal seq_detector.sv
-hierarchy -check -top seq_detector
-prep -top seq_detector
-
-hierarchy -smtcheck
-write_jny -no-connections ../model/design.json
-write_rtlil ../model/design.il
